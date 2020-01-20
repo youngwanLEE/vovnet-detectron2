@@ -36,31 +36,31 @@ We measure the inference time of all models with batch size 1 on the same V100 G
 
 |Backbone|lr sched|inference time|AP|APs|APm|APl|download|
 |:--------:|:---:|:--:|--|----|----|---|--------|
-|V2-19-FPN|3x|0.040|38.9|24.9|41.5|48.8|<a href="https://www.dropbox.com/s/1rfvi6vzx45z6y5/faster_V_19_eSE_ms_3x.pth?dl=1">model</a>&nbsp;\|&nbsp;<a href="https://dl.dropbox.com/s/dq7406vo22wjxgi/faster_V_19_eSE_ms_3x_metrics.json">metrics</a>
+|**V2-19-FPN**|3x|0.040|38.9|24.9|41.5|48.8|<a href="https://www.dropbox.com/s/1rfvi6vzx45z6y5/faster_V_19_eSE_ms_3x.pth?dl=1">model</a>&nbsp;\|&nbsp;<a href="https://dl.dropbox.com/s/dq7406vo22wjxgi/faster_V_19_eSE_ms_3x_metrics.json">metrics</a>
 ||
 |R-50-FPN|3x|0.047|40.2|24.2|43.5|52.0|<a href="https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x/137849600/model_final_f10217.pkl">model</a>&nbsp;\|&nbsp;<a href="https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x/137849600/metrics.json">metrics</a>
-|V2-39-FPN|3x|0.047|42.7|27.1|45.6|54.0|<a href="https://dl.dropbox.com/s/dkto39ececze6l4/faster_V_39_eSE_ms_3x.pth">model</a>&nbsp;\|&nbsp;<a href="https://dl.dropbox.com/s/dx9qz1dn65ccrwd/faster_V_39_eSE_ms_3x_metrics.json">metrics</a>
+|**V2-39-FPN**|3x|0.047|42.7|27.1|45.6|54.0|<a href="https://dl.dropbox.com/s/dkto39ececze6l4/faster_V_39_eSE_ms_3x.pth">model</a>&nbsp;\|&nbsp;<a href="https://dl.dropbox.com/s/dx9qz1dn65ccrwd/faster_V_39_eSE_ms_3x_metrics.json">metrics</a>
 ||
 |R-101-FPN|3x|0.063|42.0|25.2|45.6|54.6|<a href="https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_R_101_FPN_3x/138205316/model_final_a3ec72.pkl">model</a>&nbsp;\|&nbsp;<a href="https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_R_101_FPN_3x/138205316/metrics.json">metrics</a>
-|V2-57-FPN|3x|0.054|43.3|27.5|46.7|55.3|<a href="https://dl.dropbox.com/s/c7mb1mq10eo4pzk/faster_V_57_eSE_ms_3x.pth">model</a>&nbsp;\|&nbsp;<a href="https://dl.dropbox.com/s/3tsn218zzmuhyo8/faster_V_57_eSE_metrics.json">metrics</a>
+|**V2-57-FPN**|3x|0.054|43.3|27.5|46.7|55.3|<a href="https://dl.dropbox.com/s/c7mb1mq10eo4pzk/faster_V_57_eSE_ms_3x.pth">model</a>&nbsp;\|&nbsp;<a href="https://dl.dropbox.com/s/3tsn218zzmuhyo8/faster_V_57_eSE_metrics.json">metrics</a>
 ||
 |X-101-FPN|3x|0.120|43.0|27.2|46.1|54.9|<a href="https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_X_101_32x8d_FPN_3x/139653917/model_final_2d9806.pkl">model</a>&nbsp;\|&nbsp;<a href="https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_X_101_32x8d_FPN_3x/139653917/metrics.json">metrics</a>|
-|V2-99-FPN|3x|0.073|44.1|28.1|47.0|56.4|<a href="https://dl.dropbox.com/s/v64mknwzfpmfcdh/faster_V_99_eSE_ms_3x.pth">model</a>&nbsp;\|&nbsp;<a href="https://dl.dropbox.com/s/zvaz9s8gvq2mhrd/faster_V_99_eSE_ms_3x_metrics.json">metrics</a>|
+|**V2-99-FPN**|3x|0.073|44.1|28.1|47.0|56.4|<a href="https://dl.dropbox.com/s/v64mknwzfpmfcdh/faster_V_99_eSE_ms_3x.pth">model</a>&nbsp;\|&nbsp;<a href="https://dl.dropbox.com/s/zvaz9s8gvq2mhrd/faster_V_99_eSE_ms_3x_metrics.json">metrics</a>|
 
 ### Mask R-CNN
 
 |Backbone|lr sched|inference time|box AP|box APs|box APm|box APl|mask AP|mask APs|mask APm|mask APl|download|
 |:--------:|:--------:|:--:|--|----|----|---|--|----|----|---|--------|
-|V2-19-FPN|3x|0.044|40.1|25.4|43.0|51.0|36.6|19.7|38.7|51.2|<a href="https://www.dropbox.com/s/dyeyuag5va96tqo/mask_V_19_eSE_ms_3x.pth?dl=1">model</a>&nbsp;\|&nbsp;<a href="https://dl.dropbox.com/s/0y0q97gi8u8kq2n/mask_V_19_eSE_ms_3x_metrics.json">metrics</a>
+|**V2-19-FPN**|3x|0.044|40.1|25.4|43.0|51.0|36.6|19.7|38.7|51.2|<a href="https://www.dropbox.com/s/dyeyuag5va96tqo/mask_V_19_eSE_ms_3x.pth?dl=1">model</a>&nbsp;\|&nbsp;<a href="https://dl.dropbox.com/s/0y0q97gi8u8kq2n/mask_V_19_eSE_ms_3x_metrics.json">metrics</a>
 ||
 |R-50-FPN|3x|0.055|41.0|24.9|43.9|53.3|37.2|18.6|39.5|53.3|<a href="https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x/137849600/model_final_f10217.pkl">model</a>&nbsp;\|&nbsp;<a href="https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x/137849600/metrics.json">metrics</a>
-|V2-39-FPN|3x|0.052|43.8|27.6|47.2|55.3|39.3|21.4|41.8|54.6|<a href="https://dl.dropbox.com/s/c5o3yr6lwrb1170/mask_V_39_eSE_ms_3x.pth">model</a>&nbsp;\|&nbsp;<a href="https://dl.dropbox.com/s/21xqlv1ofn7oa1z/mask_V_39_eSE_metrics.json">metrics</a>
+|**V2-39-FPN**|3x|0.052|43.8|27.6|47.2|55.3|39.3|21.4|41.8|54.6|<a href="https://dl.dropbox.com/s/c5o3yr6lwrb1170/mask_V_39_eSE_ms_3x.pth">model</a>&nbsp;\|&nbsp;<a href="https://dl.dropbox.com/s/21xqlv1ofn7oa1z/mask_V_39_eSE_metrics.json">metrics</a>
 ||
 |R-101-FPN|3x|0.070|42.9|26.4|46.6|56.1|38.6|19.5|41.3|55.3|<a href="https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_R_101_FPN_3x/138205316/model_final_a3ec72.pkl">model</a>&nbsp;\|&nbsp;<a href="https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_R_101_FPN_3x/138205316/metrics.json">metrics</a>
-|V2-57-FPN|3x|0.058|44.2|28.2|47.2|56.8|39.7|21.6|42.2|55.6|<a href="https://dl.dropbox.com/s/aturknfroupyw92/mask_V_57_eSE_ms_3x.pth">model</a>&nbsp;\|&nbsp;<a href="https://dl.dropbox.com/s/8sdek6hkepcu7na/mask_V_57_eSE_metrics.json">metrics</a>
+|**V2-57-FPN**|3x|0.058|44.2|28.2|47.2|56.8|39.7|21.6|42.2|55.6|<a href="https://dl.dropbox.com/s/aturknfroupyw92/mask_V_57_eSE_ms_3x.pth">model</a>&nbsp;\|&nbsp;<a href="https://dl.dropbox.com/s/8sdek6hkepcu7na/mask_V_57_eSE_metrics.json">metrics</a>
 ||
 |X-101-FPN|3x|0.129|44.3|27.5|47.6|56.7|39.5|20.7|42.0|56.5|<a href="https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_X_101_32x8d_FPN_3x/139653917/model_final_2d9806.pkl">model</a>&nbsp;\|&nbsp;<a href="https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_X_101_32x8d_FPN_3x/139653917/metrics.json">metrics</a>|
-|V2-99-FPN|3x|0.076|44.9|28.5|48.1|57.7|40.3|21.7|42.8|56.6|<a href="https://dl.dropbox.com/s/qx45cnv718k4zmn/mask_V_99_eSE_ms_3x.pth">model</a>&nbsp;\|&nbsp;<a href="https://dl.dropbox.com/s/u1sav8deha47odp/mask_V_99_eSE_metrics.json">metrics</a>|
+|**V2-99-FPN**|3x|0.076|44.9|28.5|48.1|57.7|40.3|21.7|42.8|56.6|<a href="https://dl.dropbox.com/s/qx45cnv718k4zmn/mask_V_99_eSE_ms_3x.pth">model</a>&nbsp;\|&nbsp;<a href="https://dl.dropbox.com/s/u1sav8deha47odp/mask_V_99_eSE_metrics.json">metrics</a>|
 
 
 ### Panoptic-FPN on COCO
