@@ -3,7 +3,7 @@
 
 
 
-[[`CenterMask(code)`](https://github.com/youngwanLEE/CenterMask)] [[`VoVNet-v1(arxiv)`](https://arxiv.org/abs/1903.12174)] [[`VoVNet-v2(arxiv)`](https://arxiv.org/abs/1903.12174)] [[`BibTeX`](#CitingVoVNet)]
+[[`CenterMask(code)`](https://github.com/youngwanLEE/CenterMask)] [[`VoVNet-v1(arxiv)`](https://arxiv.org/abs/1904.09730)] [[`VoVNet-v2(arxiv)`](https://arxiv.org/abs/1911.06667)] [[`BibTeX`](#CitingVoVNet)]
 
 
 <div align="center">
@@ -168,7 +168,7 @@ python /path/to/vovnet-detectron2/train_net.py --config-file /path/to/vovnet-det
 
 
 
-## <a name="Citing VoVNet"></a>Citing VoVNet
+## <a name="CitingVoVNet"></a>Citing VoVNet
 
 If you use VoVNet, please use the following BibTeX entry.
 
