@@ -3,7 +3,7 @@
 
 
 
-[[`CenterMask(code)`](https://github.com/youngwanLEE/CenterMask)] [[`VoVNet-v1(arxiv)`](https://arxiv.org/abs/1903.12174)] [[`VoVNet-v2(arxiv)`](https://arxiv.org/abs/1903.12174)] [[`BibTeX`](#CitingVoVNet)]
+[[`CenterMask(code)`](https://github.com/youngwanLEE/CenterMask)] [[`VoVNet-v1(arxiv)`](https://arxiv.org/abs/1904.09730)] [[`VoVNet-v2(arxiv)`](https://arxiv.org/abs/1911.06667)] [[`BibTeX`](#CitingVoVNet)]
 
 
 <div align="center">
@@ -21,6 +21,7 @@ Compared to ResNe(X)t backbone
 - ***Accurate*** : Better performance, especially *small* object.
 
 ## Update
+- *Lightweight*-VoVNet-19 released. (19/02/2020)
 - VoVNetV2-19-FPNLite released. (22/01/2020)
 
 ## Results on MS-COCO in Detectron2
@@ -35,19 +36,30 @@ We measure the inference time of all models with batch size 1 on the same V100 G
 
 ### Faster R-CNN
 
-|Backbone|lr sched|inference time|AP|APs|APm|APl|download|
-|:--------:|:---:|:--:|--|----|----|---|--------|
-|V2-19-**FPNLite**|3x|0.034|38.9|24.8|41.7|49.3|<a href="https://www.dropbox.com/s/u5pvmhc871ohvgw/fast_V_19_eSE_FPNLite_ms_3x.pth?dl=1">model</a>&nbsp;\|&nbsp;<a href="https://www.dropbox.com/s/riu7hkgzlmnndhc/fast_V_19_eSE_FPNLite_ms_3x_metrics.json">metrics</a>
-|V2-19-FPN|3x|0.040|38.9|24.9|41.5|48.8|<a href="https://www.dropbox.com/s/1rfvi6vzx45z6y5/faster_V_19_eSE_ms_3x.pth?dl=1">model</a>&nbsp;\|&nbsp;<a href="https://dl.dropbox.com/s/dq7406vo22wjxgi/faster_V_19_eSE_ms_3x_metrics.json">metrics</a>
+#### Lightweight-VoVNet with _FPNLite_
+
+|Backbone|Param.|lr sched|inference time|AP|APs|APm|APl|download|
+|:--------:|:---:|:---:|:--:|--|----|----|---|--------|
+|V2-19|11.2M|3x|0.034|38.9|24.8|41.7|49.3|<a href="https://www.dropbox.com/s/u5pvmhc871ohvgw/fast_V_19_eSE_FPNLite_ms_3x.pth?dl=1">model</a>&nbsp;\|&nbsp;<a href="https://www.dropbox.com/s/riu7hkgzlmnndhc/fast_V_19_eSE_FPNLite_ms_3x_metrics.json">metrics</a>
+|V2-19-**DW**|6.5M|3x|0.027|36.7|22.7|40.0|46.0|<a href="https://www.dropbox.com/s/7h6zn0owumucs48/faster_rcnn_V_19_eSE_dw_FPNLite_ms_3x.pth?dl=1">model</a>&nbsp;\|&nbsp;<a href="https://www.dropbox.com/s/627hf4h1m485926/faster_rcnn_V_19_eSE_dw_FPNLite_ms_3x_metrics.json">metrics</a>
+|V2-19-**Slim**|3.1M|3x|0.023|35.2|21.7|37.3|44.4|<a href="https://www.dropbox.com/s/yao1i32zdylx279/faster_rcnn_V_19_eSE_slim_FPNLite_ms_3x.pth?dl=1">model</a>&nbsp;\|&nbsp;<a href="https://www.dropbox.com/s/jrgxltneki9hk84/faster_rcnn_V_19_eSE_slim_FPNLite_ms_3x_metrics.json">metrics</a>
+|V2-19-**Slim**-**DW**|1.8M|3x|0.022|32.4|19.1|34.6|41.8|<a href="https://www.dropbox.com/s/blpjx3iavrzkygt/faster_rcnn_V_19_eSE_slim_dw_FPNLite_ms_3x.pth?dl=1">model</a>&nbsp;\|&nbsp;<a href="https://www.dropbox.com/s/3og68zhq2ubr7mu/faster_rcnn_V_19_eSE_slim_dw_FPNLite_ms_3x_metrics.json">metrics</a>
+
+_**DW** and **Slim** denote depthwise separable convolution and a thiner model with half the channel size._                              
+
+
+|Backbone|Param.|lr sched|inference time|AP|APs|APm|APl|download|
+|:--------:|:---:|:---:|:--:|--|----|----|---|--------|
+|V2-19-FPN|37.6M|3x|0.040|38.9|24.9|41.5|48.8|<a href="https://www.dropbox.com/s/1rfvi6vzx45z6y5/faster_V_19_eSE_ms_3x.pth?dl=1">model</a>&nbsp;\|&nbsp;<a href="https://dl.dropbox.com/s/dq7406vo22wjxgi/faster_V_19_eSE_ms_3x_metrics.json">metrics</a>
 ||
-|R-50-FPN|3x|0.047|40.2|24.2|43.5|52.0|<a href="https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x/137849600/model_final_f10217.pkl">model</a>&nbsp;\|&nbsp;<a href="https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x/137849600/metrics.json">metrics</a>
-|**V2-39-FPN**|3x|0.047|42.7|27.1|45.6|54.0|<a href="https://dl.dropbox.com/s/dkto39ececze6l4/faster_V_39_eSE_ms_3x.pth">model</a>&nbsp;\|&nbsp;<a href="https://dl.dropbox.com/s/dx9qz1dn65ccrwd/faster_V_39_eSE_ms_3x_metrics.json">metrics</a>
+|R-50-FPN|51.2M|3x|0.047|40.2|24.2|43.5|52.0|<a href="https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x/137849600/model_final_f10217.pkl">model</a>&nbsp;\|&nbsp;<a href="https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x/137849600/metrics.json">metrics</a>
+|**V2-39-FPN**|52.6M|3x|0.047|42.7|27.1|45.6|54.0|<a href="https://dl.dropbox.com/s/dkto39ececze6l4/faster_V_39_eSE_ms_3x.pth">model</a>&nbsp;\|&nbsp;<a href="https://dl.dropbox.com/s/dx9qz1dn65ccrwd/faster_V_39_eSE_ms_3x_metrics.json">metrics</a>
 ||
-|R-101-FPN|3x|0.063|42.0|25.2|45.6|54.6|<a href="https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_R_101_FPN_3x/138205316/model_final_a3ec72.pkl">model</a>&nbsp;\|&nbsp;<a href="https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_R_101_FPN_3x/138205316/metrics.json">metrics</a>
-|**V2-57-FPN**|3x|0.054|43.3|27.5|46.7|55.3|<a href="https://dl.dropbox.com/s/c7mb1mq10eo4pzk/faster_V_57_eSE_ms_3x.pth">model</a>&nbsp;\|&nbsp;<a href="https://dl.dropbox.com/s/3tsn218zzmuhyo8/faster_V_57_eSE_metrics.json">metrics</a>
+|R-101-FPN|70.1M|3x|0.063|42.0|25.2|45.6|54.6|<a href="https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_R_101_FPN_3x/138205316/model_final_a3ec72.pkl">model</a>&nbsp;\|&nbsp;<a href="https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_R_101_FPN_3x/138205316/metrics.json">metrics</a>
+|**V2-57-FPN**|68.9M|3x|0.054|43.3|27.5|46.7|55.3|<a href="https://dl.dropbox.com/s/c7mb1mq10eo4pzk/faster_V_57_eSE_ms_3x.pth">model</a>&nbsp;\|&nbsp;<a href="https://dl.dropbox.com/s/3tsn218zzmuhyo8/faster_V_57_eSE_metrics.json">metrics</a>
 ||
-|X-101-FPN|3x|0.120|43.0|27.2|46.1|54.9|<a href="https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_X_101_32x8d_FPN_3x/139653917/model_final_2d9806.pkl">model</a>&nbsp;\|&nbsp;<a href="https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_X_101_32x8d_FPN_3x/139653917/metrics.json">metrics</a>|
-|**V2-99-FPN**|3x|0.073|44.1|28.1|47.0|56.4|<a href="https://dl.dropbox.com/s/v64mknwzfpmfcdh/faster_V_99_eSE_ms_3x.pth">model</a>&nbsp;\|&nbsp;<a href="https://dl.dropbox.com/s/zvaz9s8gvq2mhrd/faster_V_99_eSE_ms_3x_metrics.json">metrics</a>|
+|X-101-FPN|114.3M|3x|0.120|43.0|27.2|46.1|54.9|<a href="https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_X_101_32x8d_FPN_3x/139653917/model_final_2d9806.pkl">model</a>&nbsp;\|&nbsp;<a href="https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_X_101_32x8d_FPN_3x/139653917/metrics.json">metrics</a>|
+|**V2-99-FPN**|96.9M|3x|0.073|44.1|28.1|47.0|56.4|<a href="https://dl.dropbox.com/s/v64mknwzfpmfcdh/faster_V_99_eSE_ms_3x.pth">model</a>&nbsp;\|&nbsp;<a href="https://dl.dropbox.com/s/zvaz9s8gvq2mhrd/faster_V_99_eSE_ms_3x_metrics.json">metrics</a>|
 
 ### Mask R-CNN
 
@@ -138,6 +150,9 @@ Prepare for coco dataset following [this instruction](https://github.com/faceboo
 #### ImageNet Pretrained Models
 
 We provide backbone weights pretrained on ImageNet-1k dataset.
+* [VoVNetV2-19-Slim-DW](https://www.dropbox.com/s/f3s7ospitqoals1/vovnet19_ese_slim_dw_detectron2.pth)
+* [VoVNetV2-19-Slim](https://www.dropbox.com/s/8h5ybmi4ftbcom0/vovnet19_ese_slim_detectron2.pth)
+* [VoVNetV2-19-DW](https://www.dropbox.com/s/9awvl0mxye3nqz1/vovnet19_ese_dw_detectron2.pth)
 * [VoVNetV2-19](https://dl.dropbox.com/s/rptgw6stppbiw1u/vovnet19_ese_detectron2.pth)
 * [VoVNetV2-39](https://dl.dropbox.com/s/q98pypf96rhtd8y/vovnet39_ese_detectron2.pth)
 * [VoVNetV2-57](https://dl.dropbox.com/s/8xl0cb3jj51f45a/vovnet57_ese_detectron2.pth)
@@ -163,16 +178,16 @@ python /path/to/vovnet-detectron2/train_net.py --config-file /path/to/vovnet-det
 ```
 
 ## TODO
- - [ ] Adding Lightweight models
+ - [x] Adding Lightweight models
  - [ ] Applying VoVNet for other meta-architectures
 
 
 
-## <a name="Citing VoVNet"></a>Citing VoVNet
+## <a name="CitingVoVNet"></a>Citing VoVNet
 
 If you use VoVNet, please use the following BibTeX entry.
 
-```
+```BibTeX
 @inproceedings{lee2019energy,
   title = {An Energy and GPU-Computation Efficient Backbone Network for Real-Time Object Detection},
   author = {Lee, Youngwan and Hwang, Joong-won and Lee, Sangrok and Bae, Yuseok and Park, Jongyoul},

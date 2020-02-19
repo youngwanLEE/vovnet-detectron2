@@ -1,0 +1,12 @@
+_BASE_: "Base-RCNN-VoVNet-FPN.yaml"
+MODEL:
+  WEIGHTS: "https://www.dropbox.com/s/9awvl0mxye3nqz1/vovnet19_ese_dw_detectron2.pth?dl=1"
+  MASK_ON: False
+  VOVNET:
+    CONV_BODY : "V-19-dw-eSE"
+  FPN:
+    OUT_CHANNELS: 128
+SOLVER:
+  STEPS: (210000, 250000)
+  MAX_ITER: 270000
+OUTPUT_DIR: "checkpoints/FRCN-V2-19-dw-FPNLite-3x"
