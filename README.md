@@ -45,7 +45,7 @@ We measure the inference time of all models with batch size 1 on the same V100 G
 |V2-19-**Slim**|3.1M|3x|0.023|35.2|21.7|37.3|44.4|<a href="https://www.dropbox.com/s/yao1i32zdylx279/faster_rcnn_V_19_eSE_slim_FPNLite_ms_3x.pth?dl=1">model</a>&nbsp;\|&nbsp;<a href="https://www.dropbox.com/s/jrgxltneki9hk84/faster_rcnn_V_19_eSE_slim_FPNLite_ms_3x_metrics.json">metrics</a>
 |V2-19-**Slim**-**DW**|1.8M|3x|0.022|32.4|19.1|34.6|41.8|<a href="https://www.dropbox.com/s/blpjx3iavrzkygt/faster_rcnn_V_19_eSE_slim_dw_FPNLite_ms_3x.pth?dl=1">model</a>&nbsp;\|&nbsp;<a href="https://www.dropbox.com/s/3og68zhq2ubr7mu/faster_rcnn_V_19_eSE_slim_dw_FPNLite_ms_3x_metrics.json">metrics</a>
 
-_**DW** and **Slim** denote depthwise separable convolution and a thiner model with half the channel size._                              
+_**DW** and **Slim** denote depthwise separable convolution and a thiner model with half the channel size, respectively._                              
 
 
 |Backbone|Param.|lr sched|inference time|AP|APs|APm|APl|download|
