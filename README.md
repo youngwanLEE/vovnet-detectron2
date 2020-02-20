@@ -21,8 +21,8 @@ Compared to ResNe(X)t backbone
 - ***Accurate*** : Better performance, especially *small* object.
 
 ## Update
-- *Lightweight*-VoVNet-19 released. (19/02/2020)
-- VoVNetV2-19-FPNLite released. (22/01/2020)
+- *Lightweight*-VoVNet-19 has been released. (19/02/2020)
+- VoVNetV2-19-FPNLite has been released. (22/01/2020)
 
 ## Results on MS-COCO in Detectron2
 
