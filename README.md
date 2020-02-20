@@ -3,7 +3,7 @@
 
 
 
-[[`CenterMask(code)`](https://github.com/youngwanLEE/CenterMask)] [[`VoVNet-v1(arxiv)`](https://arxiv.org/abs/1904.09730)] [[`VoVNet-v2(arxiv)`](https://arxiv.org/abs/1911.06667)] [[`BibTeX`](#CitingVoVNet)]
+[[`CenterMask(code)`](https://github.com/youngwanLEE/CenterMask)][[`CenterMask2(code)`](https://github.com/youngwanLEE/centermask2)] [[`VoVNet-v1(arxiv)`](https://arxiv.org/abs/1904.09730)] [[`VoVNet-v2(arxiv)`](https://arxiv.org/abs/1911.06667)] [[`BibTeX`](#CitingVoVNet)]
 
 
 <div align="center">
@@ -23,7 +23,7 @@ Compared to ResNe(X)t backbone
 ## Update
 - *Lightweight*-VoVNet-19 has been released. (19/02/2020)
 - VoVNetV2-19-FPNLite has been released. (22/01/2020)
-
+- [centermask2](https://github.com/youngwanLEE/centermask2) has been released. (20/02/2020)
 ## Results on MS-COCO in Detectron2
 
 ### Note
