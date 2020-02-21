@@ -70,6 +70,7 @@ VoVNet57_eSE = {
     "layer_per_block": 5,
     "block_per_stage": [1, 1, 4, 3],
     "eSE": True,
+    "dw" : False
 }
 
 VoVNet99_eSE = {
@@ -110,10 +111,8 @@ def dw_conv3x3(in_channels, out_channels, module_name, postfix,
                       padding=0,
                       groups=1,
                       bias=False)),
-        ('{}_{}/pw_norm'.format(module_name, postfix),
-            nn.BatchNorm2d(out_channels)),
-        ('{}_{}/pw_relu'.format(module_name, postfix),
-            nn.ReLU(inplace=True)),
+        ('{}_{}/pw_norm'.format(module_name, postfix), get_norm(_NORM, out_channels)),
+        ('{}_{}/pw_relu'.format(module_name, postfix), nn.ReLU(inplace=True)),
     ]
 
 def conv3x3(
