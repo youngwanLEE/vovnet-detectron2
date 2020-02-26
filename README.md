@@ -40,6 +40,8 @@ We measure the inference time of all models with batch size 1 on the same V100 G
 
 |Backbone|Param.|lr sched|inference time|AP|APs|APm|APl|download|
 |:--------:|:---:|:---:|:--:|--|----|----|---|--------|
+|MobileNetV2|3.5M|3x|0.022|33.0|19.0|35.0|43.4|<a href="https://dl.dropbox.com/s/q4iceofvlcu207c/faster_mobilenetv2_FPNLite_ms_3x.pth">model</a>&nbsp;\|&nbsp;<a href="https://dl.dropbox.com/s/tz60e7rtnbsrdgd/faster_mobilenetv2_FPNLite_ms_3x_metrics.json">metrics</a>
+||
 |V2-19|11.2M|3x|0.034|38.9|24.8|41.7|49.3|<a href="https://www.dropbox.com/s/u5pvmhc871ohvgw/fast_V_19_eSE_FPNLite_ms_3x.pth?dl=1">model</a>&nbsp;\|&nbsp;<a href="https://www.dropbox.com/s/riu7hkgzlmnndhc/fast_V_19_eSE_FPNLite_ms_3x_metrics.json">metrics</a>
 |V2-19-**DW**|6.5M|3x|0.027|36.7|22.7|40.0|46.0|<a href="https://www.dropbox.com/s/7h6zn0owumucs48/faster_rcnn_V_19_eSE_dw_FPNLite_ms_3x.pth?dl=1">model</a>&nbsp;\|&nbsp;<a href="https://www.dropbox.com/s/627hf4h1m485926/faster_rcnn_V_19_eSE_dw_FPNLite_ms_3x_metrics.json">metrics</a>
 |V2-19-**Slim**|3.1M|3x|0.023|35.2|21.7|37.3|44.4|<a href="https://www.dropbox.com/s/yao1i32zdylx279/faster_rcnn_V_19_eSE_slim_FPNLite_ms_3x.pth?dl=1">model</a>&nbsp;\|&nbsp;<a href="https://www.dropbox.com/s/jrgxltneki9hk84/faster_rcnn_V_19_eSE_slim_FPNLite_ms_3x_metrics.json">metrics</a>
