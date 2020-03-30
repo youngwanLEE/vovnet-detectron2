@@ -28,7 +28,7 @@ Compared to ResNe(X)t backbone
 
 ### Note
 
-We measure the inference time of all models with batch size 1 on the same V100 GPU machine.
+We measure the inference time of all models with batch size 1 on the same V100 GPU machine.  
 We train all models using V100 8GPUs.
 
 - pytorch1.3.1
